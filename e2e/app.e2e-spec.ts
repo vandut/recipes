@@ -6,9 +6,10 @@ describe('recipes App', function() {
   beforeEach(() => {
     page = new RecipesPage();
   });
-
+/*
   it('should display message saying app works', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('app works!');
   });
+*/
 });
