@@ -1,0 +1,87 @@
+:host {
+  display: block;
+}
+
+.section-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+.section-name, .section-content {
+  padding: 0.5em;
+}
+.section-name {
+  background-color: rgb(102, 102, 102);
+  color: white;
+  vertical-align: top;
+  text-align: right;
+  width: 6em;
+}
+
+/* border */
+.section-name {
+  border: 0.2em solid white;
+}
+.section-content {
+  border-bottom: 0.2em solid rgb(217, 217, 217);
+}
+.section-group:last-child .section-name, .section-group:last-child .section-content {
+  border-bottom: 0;
+}
+
+/* no margins for paragraphs and lists */
+.section-content p, .section-content ul, .section-content ol {
+  margin: 0;
+}
+
+/* INDIVIDUALS CONTENT SECTIONS */
+.section-content-title {
+  text-align: center;
+  font-weight: bold;
+}
+.section-content-link {
+  text-align: center;
+}
+.section-content-portions {
+  text-align: center;
+}
+.section-content-photo {
+  text-align: center;
+}
+.section-content-photo img {
+  max-height: 12em;
+}
+.section-content-ingredients {
+}
+.section-content-instructions ol {
+  list-style-type: upper-roman;
+}
+
+/* INDIVIDUALS NAME SECTIONS */
+.section-name-title {
+}
+.section-name-link {
+}
+.section-name-portions {
+}
+.section-name-photo {
+}
+.section-name-ingredients {
+}
+.section-name-instructions {
+}
+
+/* INGREDIENTS */
+.ingredient-list {
+}
+.ingredient-element {
+}
+.ingredient-name {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  min-width: 10em;
+}
+.ingredient-amount {
+  display: inline-block;
+  vertical-align: top;
+}
