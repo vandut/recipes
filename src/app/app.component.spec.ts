@@ -3,6 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { RecipeComponent } from './recipe.component';
+import { RecipeService } from './recipe.service';
 
 describe('App: Recipes', () => {
   beforeEach(() => {
@@ -11,6 +12,7 @@ describe('App: Recipes', () => {
         AppComponent,
         RecipeComponent
       ],
+      providers: [RecipeService]
     });
   });
 
