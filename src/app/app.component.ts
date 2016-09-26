@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+export * from './recipe.component';
 
 @Component({
   selector: 'app-root',

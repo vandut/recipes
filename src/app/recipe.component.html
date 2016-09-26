@@ -1,0 +1,43 @@
+<table class="section-container">
+  <tr class="section-group">
+    <td class="section-name section-name-title">Title</td>
+    <td class="section-content section-content-title">{{recipe.title}}</td>
+  </tr>
+  <tr class="section-group">
+    <td class="section-name section-name-link">Link</td>
+    <td class="section-content section-content-link">
+      <a href="https://www.youtube.com/watch?v=dM8StL3nHi0">{{recipe.link}}</a>
+    </td>
+  </tr>
+  <tr class="section-group">
+    <td class="section-name section-name-portions">Portions</td>
+    <td class="section-content section-content-portions">{{recipe.portions}} portions</td>
+  </tr>
+  <tr class="section-group">
+    <td class="section-name section-name-photo"></td>
+    <td class="section-content section-content-photo">
+      <img alt="Recipe image" src="assets/recipes/{{recipe.uuid}}.png">
+    </td>
+  </tr>
+  <tr class="section-group">
+    <td class="section-name section-name-ingredients">Ingredients</td>
+    <td class="section-content section-content-ingredients">
+      <ol class="ingredient-list">
+        <li class="ingredient-element" *ngFor="let ingredient of recipe.ingredients">
+          <span class="ingredient-name">{{ingredient.name}}</span>
+          <span class="ingredient-amount">- {{ingredient.amount}} {{ingredient.unit}}</span>
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr class="section-group">
+    <td class="section-name section-name-instructions">Instructions</td>
+    <td class="section-content section-content-instructions">
+      <ol class="instruction-list">
+        <li class="instruction-element" *ngFor="let instruction of recipe.instructions">
+          {{instruction}}
+        </li>
+      </ol>
+    </td>
+  </tr>
+</table>
