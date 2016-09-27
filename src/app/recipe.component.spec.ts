@@ -1,14 +1,12 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
 import { RecipeComponent } from './recipe.component';
-import { RecipeService } from './recipe.service';
 
 describe('Component: Recipe', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RecipeComponent],
-      providers: [RecipeService]
+      declarations: [RecipeComponent]
     });
   });
 

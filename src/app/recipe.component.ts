@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core/src/metadata/directives';
 import { Recipe } from './recipe';
-import { RecipeService } from './recipe.service';
+import { Objects } from './helpers/objects';
 
 @Component({
   selector: 'app-recipe',
   templateUrl: 'recipe.component.html',
   styleUrls: ['recipe.component.css']
 })
-export class RecipeComponent {
+export class RecipeComponent implements OnInit {
 
+  @Input()
   private recipe: Recipe;
 
-  constructor(private recipeService: RecipeService) {
-    this.recipe = this.recipeService.getRecipe('7bc8aee8-fdca-4c90-b944-5682801bde0b');
+  // noinspection JSUnusedGlobalSymbols
+  public ngOnInit(): void {
+    Objects.requireNonNull(this.recipe, "Missing recipe");
   }
 
 }

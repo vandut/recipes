@@ -1,7 +1,7 @@
 import { Ingredient } from './ingredient';
 
 export class Recipe {
-  uuid: String;
+  id: String;
   title: String;
   link: String;
   portions: Number;
