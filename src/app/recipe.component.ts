@@ -15,7 +15,7 @@ export class RecipeComponent implements OnInit {
 
   // noinspection JSUnusedGlobalSymbols
   public ngOnInit(): void {
-    Objects.requireNonNull(this.recipe, "Missing recipe");
+    Objects.requireNonNull(this.recipe, 'Missing recipe');
   }
 
 }
