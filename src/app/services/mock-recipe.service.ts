@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from './recipe';
+import { Recipe } from '../dtos/recipe';
 import { RecipeService } from './recipe.service';
 import LinkedDictionary from 'typescript-collections/dist/lib/LinkedDictionary';
 

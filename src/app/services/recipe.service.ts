@@ -1,4 +1,4 @@
-import { Recipe } from './recipe';
+import { Recipe } from '../dtos/recipe';
 
 export abstract class RecipeService {
 

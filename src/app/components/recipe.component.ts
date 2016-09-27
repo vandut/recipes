@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core/src/metadata/directives';
-import { Recipe } from './recipe';
-import { Objects } from './helpers/objects';
+import { Recipe } from '../dtos/recipe';
+import { Objects } from '../helpers/objects';
 
 @Component({
   selector: 'app-recipe',

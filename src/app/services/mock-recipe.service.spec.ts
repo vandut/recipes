@@ -2,7 +2,7 @@
 
 import { TestBed, inject } from '@angular/core/testing';
 import { MockRecipeService } from './mock-recipe.service';
-import { Recipe } from './recipe';
+import { Recipe } from '../dtos/recipe';
 
 describe('Service: MockRecipe', () => {
   beforeEach(() => {
