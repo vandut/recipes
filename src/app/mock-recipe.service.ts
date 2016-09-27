@@ -10,7 +10,7 @@ export class MockRecipeService implements RecipeService {
 
   constructor() {
     this.addRecipe({
-      id: '7bc8aee8-fdca-4c90-b944-5682801bde0b',
+      id: 'wrG2k',
       title: 'Pork in vindaloo sauce',
       link: 'https://www.youtube.com/watch?v=dM8StL3nHi0',
       portions: 3,
@@ -37,7 +37,7 @@ export class MockRecipeService implements RecipeService {
       ]
     });
     this.addRecipe({
-      id: '7217942a-a5a8-4ad3-ab73-9cb4f78e23de',
+      id: 'zkaJr',
       title: 'Recipe1',
       link: 'https://www.youtube.com/watch?v=ABCDZ',
       portions: 3,
