@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from '../dtos/recipe';
-import { RecipeService } from './recipe.service';
-import LinkedDictionary from 'typescript-collections/dist/lib/LinkedDictionary';
+import { InMemoryRecipeService } from './in-memory-recipe.service';
 
 @Injectable()
-export class MockRecipeService implements RecipeService {
-
-  private recipes: LinkedDictionary<String, Recipe> = new LinkedDictionary<String, Recipe>();
+export class PopulatedInMemoryRecipeService extends InMemoryRecipeService {
 
   constructor() {
+    super();
     this.addRecipe({
       id: 'wrG2k',
       title: 'Pork in vindaloo sauce',
@@ -63,22 +60,6 @@ export class MockRecipeService implements RecipeService {
         'Kadabra'
       ]
     });
-  }
-
-  public listRecipes(): String[] {
-    return this.recipes.keys();
-  }
-
-  public getRecipe(recipeId: String): Recipe {
-    return this.recipes.getValue(recipeId);
-  }
-
-  public addRecipe(recipe: Recipe): void {
-    this.recipes.setValue(recipe.id, recipe);
-  }
-
-  public removeRecipe(recipeId: String): boolean {
-    return this.recipes.remove(recipeId) != null;
   }
 
 }

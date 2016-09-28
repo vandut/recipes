@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './components/app.component';
 import { RecipeComponent } from './components/recipe.component';
 import { RecipeService } from './services/recipe.service';
-import { MockRecipeService } from './services/mock-recipe.service';
+import { PopulatedInMemoryRecipeService } from './services/populated-in-memory-recipe.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { MockRecipeService } from './services/mock-recipe.service';
     HttpModule
   ],
   providers: [
-    {provide: RecipeService, useClass: MockRecipeService}
+    {provide: RecipeService, useClass: PopulatedInMemoryRecipeService}
   ],
   bootstrap: [AppComponent]
 })
