@@ -37,7 +37,7 @@ export class PopulatedInMemoryRecipeService extends InMemoryRecipeService {
       id: 'zkaJr',
       title: 'Recipe1',
       link: 'https://www.youtube.com/watch?v=ABCDZ',
-      portions: 3,
+      portions: 5,
       ingredients: [
         {
           name: 'XYZ',
@@ -48,16 +48,10 @@ export class PopulatedInMemoryRecipeService extends InMemoryRecipeService {
           name: 'Water',
           amount: 5.250,
           unit: 'ml'
-        },
-        {
-          name: 'Bread',
-          amount: 1,
-          unit: 'slice'
         }
       ],
       instructions: [
-        'Abra',
-        'Kadabra'
+        'Abra'
       ]
     });
   }

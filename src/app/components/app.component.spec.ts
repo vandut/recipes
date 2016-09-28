@@ -2,19 +2,19 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { RecipeComponent } from './recipe.component';
 import { RecipeService } from '../services/recipe.service';
-import { InMemoryRecipeService } from '../services/in-memory-recipe.service';
+import { RecipeSummaryComponent } from './recipe-summary.component';
+import { PopulatedInMemoryRecipeService } from '../services/populated-in-memory-recipe.service';
 
 describe('App: Recipes', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        RecipeComponent
+        RecipeSummaryComponent
       ],
       providers: [
-        {provide: RecipeService, useClass: InMemoryRecipeService}
+        {provide: RecipeService, useClass: PopulatedInMemoryRecipeService}
       ]
     });
   });

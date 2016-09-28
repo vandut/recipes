@@ -1,0 +1,24 @@
+div.container {
+  display: flex;
+  margin: 0.5em;
+  border-right: 0.5em solid lightgrey;
+}
+
+div.photo {
+  flex: 0 1 auto;
+  height: 6em;
+  width: 8em;
+  padding: 0.5em;
+  text-align: center;
+  background-color: lightgrey;
+}
+
+div.photo img {
+  max-height: 6em;
+  max-width: 8em;
+}
+
+div.content {
+  flex: 1 1 auto;
+  padding-left: 0.5em;
+}
