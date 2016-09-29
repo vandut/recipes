@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../../dtos/recipe';
 import { RecipeService } from '../../services/recipe.service';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-page',
@@ -11,11 +12,13 @@ export class RecipePageComponent implements OnInit {
 
   recipe: Recipe;
 
-  public constructor(private recipeService: RecipeService) {
+  public constructor(private recipeService: RecipeService, private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
-    this.recipe = this.recipeService.getRecipe('wrG2k');
+    this.activatedRoute.params.forEach((params: Params) => {
+      this.recipe = this.recipeService.getRecipe(params['id']);
+    });
   }
 
 }
