@@ -9,13 +9,15 @@ import { PopulatedInMemoryRecipeService } from './services/populated-in-memory-r
 import { RecipeSummaryFragmentComponent } from './components/fragments/recipe-summary-fragment.component';
 import { HomePageComponent } from './components/pages/home-page.component';
 import { routing, appRoutingProviders } from './app.routing';
+import { NotFoundPageComponent } from './components/pages/not-found-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeDetailsFragmentComponent,
     RecipeSummaryFragmentComponent,
-    HomePageComponent
+    HomePageComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

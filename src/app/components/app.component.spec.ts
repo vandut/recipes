@@ -7,6 +7,7 @@ import { RecipeService } from '../services/recipe.service';
 import { PopulatedInMemoryRecipeService } from '../services/populated-in-memory-recipe.service';
 import { RecipeSummaryFragmentComponent } from './fragments/recipe-summary-fragment.component';
 import { routing, appRoutingProviders } from '../app.routing';
+import { NotFoundPageComponent } from './pages/not-found-page.component';
 
 describe('App: Recipes', () => {
   beforeEach(() => {
@@ -17,6 +18,7 @@ describe('App: Recipes', () => {
       declarations: [
         AppComponent,
         HomePageComponent,
+        NotFoundPageComponent,
         RecipeSummaryFragmentComponent
       ],
       providers: [

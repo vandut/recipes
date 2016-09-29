@@ -1,9 +1,11 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './components/pages/home-page.component';
+import { NotFoundPageComponent } from './components/pages/not-found-page.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomePageComponent}
+  {path: '', component: HomePageComponent},
+  {path: '**', component: NotFoundPageComponent}
 ];
 
 export const appRoutingProviders: any[] = [];
