@@ -1,17 +1,17 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed } from '@angular/core/testing';
-import { RecipeComponent } from './recipe.component';
+import { RecipeDetailsFragmentComponent } from './recipe-details-fragment.component';
 
-describe('Component: Recipe', () => {
+describe('Component: RecipeDetailsFragment', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RecipeComponent]
+      declarations: [RecipeDetailsFragmentComponent]
     });
   });
 
   it('should create an instance', () => {
-    let fixture = TestBed.createComponent(RecipeComponent);
+    let fixture = TestBed.createComponent(RecipeDetailsFragmentComponent);
     let component = fixture.debugElement.componentInstance;
     expect(component).toBeTruthy();
   });

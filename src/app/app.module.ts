@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './components/app.component';
-import { RecipeComponent } from './components/recipe.component';
+import { RecipeDetailsFragmentComponent } from './components/fragments/recipe-details-fragment.component';
 import { RecipeService } from './services/recipe.service';
 import { PopulatedInMemoryRecipeService } from './services/populated-in-memory-recipe.service';
-import { RecipeSummaryComponent } from './components/recipe-summary.component';
+import { RecipeSummaryFragmentComponent } from './components/fragments/recipe-summary-fragment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RecipeComponent,
-    RecipeSummaryComponent
+    RecipeDetailsFragmentComponent,
+    RecipeSummaryFragmentComponent
   ],
   imports: [
     BrowserModule,

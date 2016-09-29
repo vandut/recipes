@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../dtos/recipe';
 import { Input } from '@angular/core/src/metadata/directives';
-import { Objects } from '../helpers/objects';
+import { Recipe } from '../../dtos/recipe';
+import { Objects } from '../../helpers/objects';
 
 @Component({
-  selector: 'app-recipe-summary',
-  templateUrl: 'recipe-summary.component.html',
-  styleUrls: ['recipe-summary.component.css']
+  selector: 'app-recipe-details',
+  templateUrl: 'recipe-details-fragment.component.html',
+  styleUrls: ['recipe-details-fragment.component.css']
 })
-export class RecipeSummaryComponent implements OnInit {
+export class RecipeDetailsFragmentComponent implements OnInit {
 
   @Input()
   private recipe: Recipe;
