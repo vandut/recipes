@@ -10,6 +10,7 @@ import { RecipeSummaryFragmentComponent } from './components/fragments/recipe-su
 import { HomePageComponent } from './components/pages/home-page.component';
 import { routing, appRoutingProviders } from './app.routing';
 import { NotFoundPageComponent } from './components/pages/not-found-page.component';
+import { RecipePageComponent } from './components/pages/recipe-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NotFoundPageComponent } from './components/pages/not-found-page.compone
     RecipeDetailsFragmentComponent,
     RecipeSummaryFragmentComponent,
     HomePageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    RecipePageComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@
     <img alt="Recipe image" src="assets/recipes/{{recipe.id}}.png">
   </div>
   <div class="content">
-    <p><strong>{{recipe.title}}</strong></p>
+    <p><strong><a [routerLink]="['/recipe', recipe.id]">{{recipe.title}}</a></strong></p>
     <p>Portions: {{recipe.portions}}, ingredients: {{recipe.ingredients.length}}</p>
   </div>
 </div>
