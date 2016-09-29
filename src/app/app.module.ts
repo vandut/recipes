@@ -8,6 +8,7 @@ import { RecipeService } from './services/recipe.service';
 import { PopulatedInMemoryRecipeService } from './services/populated-in-memory-recipe.service';
 import { RecipeSummaryFragmentComponent } from './components/fragments/recipe-summary-fragment.component';
 import { HomePageComponent } from './components/pages/home-page.component';
+import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,14 @@ import { HomePageComponent } from './components/pages/home-page.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [
+    appRoutingProviders,
     {provide: RecipeService, useClass: PopulatedInMemoryRecipeService}
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
