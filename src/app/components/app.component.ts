@@ -1,25 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { Recipe } from '../dtos/recipe';
-import { RecipeService } from '../services/recipe.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   title = 'Recipes';
-  recipes: Recipe[] = [];
 
-  public constructor(private recipeService: RecipeService) {
-  }
-
-  // noinspection JSUnusedGlobalSymbols
-  public ngOnInit(): void {
-    for (let recipeId of this.recipeService.listRecipes()) {
-      this.recipes.push(this.recipeService.getRecipe(recipeId));
-    }
+  public constructor() {
   }
 
 }
