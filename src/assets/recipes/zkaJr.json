@@ -1,0 +1,21 @@
+{
+  "id": "zkaJr",
+  "title": "Recipe1",
+  "link": "https://www.youtube.com/watch?v=ABCDZ",
+  "portions": 5,
+  "ingredients": [
+    {
+      "name": "XYZ",
+      "amount": 4,
+      "unit": "cup"
+    },
+    {
+      "name": "Water",
+      "amount": 5.250,
+      "unit": "ml"
+    }
+  ],
+  "instructions": [
+    "Abra"
+  ]
+}
