@@ -20,7 +20,7 @@ export class RecipePageComponent implements OnInit {
   }
 
   private loadRecipe(recipeId: String) {
-    this.recipe = this.recipeService.getRecipe(recipeId);
+    this.recipeService.getRecipe(recipeId).then(recipe => this.recipe = recipe);
   }
 
 }

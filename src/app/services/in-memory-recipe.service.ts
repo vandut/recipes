@@ -8,20 +8,21 @@ export class InMemoryRecipeService implements RecipeService {
 
   private recipes: LinkedDictionary<String, Recipe> = new LinkedDictionary<String, Recipe>();
 
-  public listRecipes(): String[] {
-    return this.recipes.keys();
+  public listRecipes(): Promise<String[]> {
+    return Promise.resolve(this.recipes.keys());
   }
 
-  public getRecipe(recipeId: String): Recipe {
-    return this.recipes.getValue(recipeId);
+  public getRecipe(recipeId: String): Promise<Recipe> {
+    return Promise.resolve(this.recipes.getValue(recipeId));
   }
 
-  public addRecipe(recipe: Recipe): void {
+  public addRecipe(recipe: Recipe): Promise<void> {
     this.recipes.setValue(recipe.id, recipe);
+    return Promise.resolve();
   }
 
-  public removeRecipe(recipeId: String): boolean {
-    return this.recipes.remove(recipeId) != null;
+  public removeRecipe(recipeId: String): Promise<boolean> {
+    return Promise.resolve(this.recipes.remove(recipeId) != null);
   }
 
 }

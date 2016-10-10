@@ -16,9 +16,11 @@ export class HomePageComponent implements OnInit {
 
   // noinspection JSUnusedGlobalSymbols
   ngOnInit() {
-    for (let recipeId of this.recipeService.listRecipes()) {
-      this.recipes.push(this.recipeService.getRecipe(recipeId));
-    }
+    this.recipeService.listRecipes().then(recipeIds => {
+      for (let recipeId of recipeIds) {
+        this.recipeService.getRecipe(recipeId).then(recipe => this.recipes.push(recipe));
+      }
+    });
   }
 
 }
